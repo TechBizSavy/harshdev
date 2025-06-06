@@ -1,15 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './contact.module.css';
 
 export default function ContactPage() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitted, setSubmitted] = useState(false);
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log({ name, email, message });
     setSubmitted(true);
@@ -32,7 +32,7 @@ export default function ContactPage() {
       <div className={styles.contactContainer}>
         <div className={styles.contactInfo}>
           <h2>Get In Touch</h2>
-          <p>Im always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
 
           <div className={styles.contactMethod}>
             <strong>Email:</strong>
@@ -54,7 +54,7 @@ export default function ContactPage() {
           <h2>Contact Form</h2>
           {submitted && (
             <div className={styles.successMessage}>
-              <p>Thank you for reaching out! I ll get back to you soon.</p>
+              <p>Thank you for reaching out! I'll get back to you soon.</p>
             </div>
           )}
 
