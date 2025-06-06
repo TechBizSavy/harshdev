@@ -1,7 +1,15 @@
 import Link from 'next/link';
 import styles from './ProjectCard.module.css';
 
-export default function ProjectCard({ title, description, link }) {  
+
+
+interface ProjectCardProps {
+  title : string,
+  description : string,
+  link? : string
+}
+
+export default function ProjectCard({ title, description, link }:  ProjectCardProps) {  
   return (
     
     <div className={styles.card}>
