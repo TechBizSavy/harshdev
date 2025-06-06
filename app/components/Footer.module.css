@@ -1,0 +1,50 @@
+.footer {
+    margin-top: 20px;
+    padding: 2rem 0;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    border-top: 1px solid var(--card-border);
+    transition: color var(--transition-speed);
+  }
+  
+  .footerText {
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .socialLinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .socialLinks a:hover {
+    transform: translateY(-3px);
+    background-color: rgba(128, 128, 128, 0.1);
+  }
+  
+  .socialLinks a::after {
+    display: none;
+  }
+  
+  .invertIcon {
+    filter: invert(1);
+  }

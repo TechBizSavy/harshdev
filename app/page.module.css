@@ -1,0 +1,57 @@
+.greeting {
+    color: var(--header-color);
+    font-weight: 700;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .greeting::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.4s;
+  }
+  
+  .featuredSection {
+    margin-top: 3rem;
+  }
+  
+  .sectionTitle {
+    color: var(--header-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+  }
+  
+  .projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .projectGrid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .greeting {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    
+    .sectionTitle {
+      font-size: 1.75rem;
+    }
+  }
