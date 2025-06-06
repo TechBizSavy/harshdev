@@ -32,7 +32,7 @@ export default function ContactPage() {
       <div className={styles.contactContainer}>
         <div className={styles.contactInfo}>
           <h2>Get In Touch</h2>
-          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <p>Im always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
 
           <div className={styles.contactMethod}>
             <strong>Email:</strong>
@@ -54,7 +54,7 @@ export default function ContactPage() {
           <h2>Contact Form</h2>
           {submitted && (
             <div className={styles.successMessage}>
-              <p>Thank you for reaching out! I'll get back to you soon.</p>
+              <p>Thank you for reaching out! I ll get back to you soon.</p>
             </div>
           )}
 

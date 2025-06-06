@@ -36,7 +36,7 @@ export default function ProjectsPage() {
     <>
       <h1 className={styles.pageTitle}>Projects</h1>
       <p className={styles.pageDescription}>
-        Here's a collection of my work, spanning web development, interface design, and interactive applications.
+        Here s a collection of my work, spanning web development, interface design, and interactive applications.
       </p>
       
       <div className={styles.projectGrid}>
