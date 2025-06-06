@@ -7,9 +7,16 @@ import { ThemeContext } from '@/app/context/ThemeContext';
 import styles from './Footer.module.css';
 
 export default function Footer() {
-  const { darkMode } = useContext(ThemeContext);
+  const context = useContext(ThemeContext);
+
+  if (!context) {
+    // If context is undefined, throw error or provide fallback
+    throw new Error('ThemeContext must be used within a ThemeProvider');
+  }
+
+  const { darkMode } = context;
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerText}>
