@@ -1,21 +1,30 @@
 'use client';
 
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect, ReactNode } from 'react';
 
-export const ThemeContext = createContext();
+interface ThemeContextType {
+  darkMode: boolean;
+  toggleTheme: () => void;
+  mounted: boolean;
+}
 
-export const ThemeProvider = ({ children }) => {
+interface ThemeProviderProps {
+  children: ReactNode;
+}
+
+export const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
+
+export const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [darkMode, setDarkMode] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => { 
-    // Initialize once mounted to avoid hydration mismatch
+  useEffect(() => {
     setMounted(true);
-    
-    const isDarkMode = 
-      localStorage.getItem('theme') === 'dark' || 
+
+    const isDarkMode =
+      localStorage.getItem('theme') === 'dark' ||
       (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    
+
     setDarkMode(isDarkMode);
   }, []);
 
