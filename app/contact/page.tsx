@@ -36,7 +36,7 @@ export default function ContactPage() {
 
           <div className={styles.contactMethod}>
             <strong>Email:</strong>
-            <a href="mailto:contact@harshchalwadi.com">contact@harshchalwadi.com</a>
+            <a href="harshchalwadi027@gmail.com">harshchalwadi027@gmai.com</a>
           </div>
 
           <div className={styles.contactMethod}>
