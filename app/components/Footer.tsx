@@ -38,16 +38,16 @@ export default function Footer() {
           />
         </Link>
         <Link 
-          href="/projects" 
+          href="https://docs.google.com/document/d/1BMBpZzXMLHTglNkYXkocAF7__cThZcvnZyZBGnHWRes/edit?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer" 
           aria-label="Stack Overflow Profile"
         >
           <Image 
-            src="/stack.svg" 
-            alt="Stack Overflow" 
-            width={24} 
-            height={24}
+            src="/resume.svg" 
+            alt="Resume" 
+            width={25} 
+            height={25}
             className={darkMode ? styles.invertIcon : ''}
           />
         </Link>
