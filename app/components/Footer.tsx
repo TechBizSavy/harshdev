@@ -24,7 +24,7 @@ export default function Footer() {
       </div>
       <div className={styles.socialLinks}>
         <Link 
-          href="https://github.com/" 
+          href="https://github.com/TechBizSavy" 
           target="_blank" 
           rel="noopener noreferrer" 
           aria-label="GitHub Profile"
@@ -38,7 +38,7 @@ export default function Footer() {
           />
         </Link>
         <Link 
-          href="https://stackoverflow.com/" 
+          href="/projects" 
           target="_blank" 
           rel="noopener noreferrer" 
           aria-label="Stack Overflow Profile"
@@ -52,7 +52,7 @@ export default function Footer() {
           />
         </Link>
         <Link 
-          href="https://linkedin.com/" 
+          href="https://www.linkedin.com/in/harsh-chalwadi-1944052b3/" 
           target="_blank" 
           rel="noopener noreferrer" 
           aria-label="LinkedIn Profile"
@@ -66,7 +66,7 @@ export default function Footer() {
           />
         </Link>
         <Link 
-          href="https://twitter.com/" 
+          href="https://x.com/Harsh__chalwadi" 
           target="_blank" 
           rel="noopener noreferrer" 
           aria-label="Twitter Profile"
