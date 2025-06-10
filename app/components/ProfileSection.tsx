@@ -12,13 +12,6 @@ export default function ProfileSection() {
           languages and logic, ensuring every solution I create is efficient
           and impactful.
         </p>
-
-        <p>
-          Beyond my tech pursuits, Im passionate about refining business
-          strategies. When Im not brainstorming the next big idea, you ll
-          find me on the football field or soaking in nature to keep my mind
-          clear and focused.
-        </p>
       </div>
       <div className={styles.imageWrapper}>
         <Image 
